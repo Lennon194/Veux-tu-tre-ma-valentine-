@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Veux tu être ma valentine Mary ? </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Veux-tu être ma Valentine ?</h1>
+    <button id="yesButton">Oui</button>
+    <button id="noButton">Non</button>
+
+    <script>
+        document.getElementById('noButton').addEventListener('click', function() {
+            this.style.display = 'none';
+            document.getElementById('yesButton').style.fontSize = '32px';
+            document.getElementById('yesButton').style.padding = '20px 40px';
+        });
+
+        document.getElementById('yesButton').addEventListener('click', function() {
+            alert("je t'aime mon petit coeur ❤️");
+        });
+    </script>
+</body>
+</html>
